@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+@font-face{
+    src: url(../fonts/Acrom-Bold.ttf);
+    font-family: Acrom-Bold;
+}
+@font-face{
+    src: url(../fonts/Acrom-Medium.ttf);
+    font-family: Acrom-Medium;
+}
+@font-face{
+    src: url(../fonts/Acrom-Regular.ttf);
+    font-family: Acrom-Regular;
+}
+
+$pink: #ff58b0;
+$grey: #bcbcbc;
+$lightPink: #fabadc;
+$acromReg: Acrom-Regular, Arial, Helvetica, sans-serif;
+$acromMed: Acrom-Medium, Arial, Helvetica, sans-serif;
+$acromBold: Acrom-Bold, Arial, Helvetica, sans-serif;
+
+html, body{
+    // font-size: 16px;
+    font-family: $acromReg;
+}
+.header{
+    margin-bottom: 77px;
+}
+.inner_wrapper{
+    border-bottom: 2px solid #cdcdcd;
+}
+.upper_header{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0 7px;
+    .empty{
+        width: 25%;
+    }
+    .logo_link{
+        // margin-right: 163px;
+        .logo_img{
+            display: block;
+        }
+    }
+    .header_phone_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        .header_backcall{
+            background-color: transparent;
+            border: 2px solid #ff58b0;
+            box-shadow: 0 7px 13px rgba(0, 0, 0, 0.19);
+            border-radius: 27px;
+            padding: 14px 85px;
+            color: $pink;
+            font-family: $acromMed;
+            font-size: 18px;
+            cursor: pointer;
+            margin-bottom: 14px;
+            transition: .3s all;
+            &:hover{
+                color: #fff;
+                background-color: $pink;
+                transition: .3s all;
+            }
+        }
+        .phone_link{
+            color: $pink;
+            font-size: 14px;
+            &:first-of-type{
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+@keyframes activeMenu{
+    100% {
+        
+    }
+}
+
+.down_header{
+    padding: 33px 0;
+    display: flex;
+    justify-content: center;
+    .burger_menu{
+        display: none;
+        transition: .4s all;
+        cursor: pointer;
+        width: 32px !important; 
+        height: 32px;
+        .first,
+        .second,
+        .third{
+        transition: .4s all;
+        }
+        &.active{
+            .first{
+                transform: translateX(130px) rotate(45deg);
+            }
+            .second{
+                transform: translate(-73px, 208px) rotate(-45deg);
+            }
+            .third{
+                opacity: 0;
+            }
+        }
+        path{
+            fill: $pink;
+            transition: .4s all;
+        }
+    }
+    .menu_list{
+        display: flex;
+        justify-content: space-between;
+        max-width: 970px;
+        width: 100%;
+        padding: 0 37px 0 44px;
+        transition: .4s all;
+        &.open{
+            display: block;
+            max-height: 120px;
+            transition: .4s all;
+        }
+        .menu_list_item{
+
+            .menu_list_link{
+                color: $grey;
+                font-family: $acromMed;
+                font-size: 20px;
+                transition: .3s all;
+                &:hover{
+                    color: $lightPink;
+                    transition: .3s all;
+                }
+                &.active{
+                    color: $lightPink;
+                }
+            }
+        }
+
+    }
+}
+.curses_first_row{
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px 75px;
+    .curses_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin-right: 50px;
+        margin-bottom: 69px;
+        .curse_heading{
+            color: #3e3e3e;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        .curse_item{
+            position: relative;
+            cursor: pointer;
+            img{
+                display: block;
+            }
+            .curse_item_cover{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+                opacity: 0;
+                background-color: #ff58b1b2;
+                transition: .3s all;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                .cover_heading{
+                    color: #ffffff;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    margin-bottom: 19px;
+                    text-align: center;
+                }
+                .cover_descr{
+                    max-width: 200px;
+                    color: #ffffff;
+                    font-size: 14px;
+                    text-align: center;
+                    margin-bottom: 86px;
+                }
+                .curse_link{
+                    font-size: 20px;
+                    color: $pink;
+                    background-color: #fff;
+                    box-shadow: 0 7px 13px rgba(0, 0, 0, 0.19);
+                    border-radius: 21px;
+                    padding: 10px 80px;
+                }
+            }
+            &:hover .curse_item_cover{
+                opacity: 1;
+                visibility: visible;
+                transition: .3s all;
+            }
+        }
+    }
+}
+.eyelash_bnr{
+    max-width: 1920px;
+    margin: 0 auto 112px;
+    font-size: 0;
+    .bnr_link{
+        font-size: 0;
+        display: inline-block;
+        .bnr_img{
+            width: 100%;
+        }
+    }
+}
+.sign_up{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 77px 0;
+    .sign_up_descr{
+        color: $pink;
+        font-family: $acromMed;
+        max-width: 745px;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 86px;
+        &:first-child{
+            margin-bottom: 45px;
+        }
+    }
+    .sign_up_heading{
+        color: #3e3e3e;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 34px;
+    }
+    .sign_up_form{
+        display: flex;
+        flex-direction: column;
+        max-width: 509px;
+        width: 100%;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../img/lash_love.png);
+            background-size: cover;
+            width: 202px;
+            height: 114px;
+            top: -50%;
+            right: -39%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/brushes.png);
+            background-size: cover;
+            width: 179px;
+            height: 189px;
+            top: 89px;
+            left: -140px;
+        }
+        input{
+            box-shadow: 0 7px 13px rgba(0, 0, 0, 0.19);
+            border-radius: 27px;
+            border: 2px solid #131313;
+            padding: 16px 0 14px 19px;
+            color: #20202081;
+            font-size: 18px;
+            
+            &:first-child{
+                margin-bottom: 22px;
+            }
+            &:nth-child(2){
+                margin-bottom: 41px;
+            }
+        }
+        input[type='submit']{
+            background-color: $pink;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            font-family: $acromReg;
+            z-index: 10;
+            font-size: 24px;
+            padding: 13px 0;
+        }
+    }
+}
+.footer{
+    padding: 16px 0 34px;
+}
+.social_footer{
+    display: flex;
+    justify-content: center;
+    .social_links{
+        display: flex;
+        .social_link{
+            display: inline-block;
+            font-size: 0;
+            border: 1px solid #cdcdcd;
+            transition: .3s all;
+            &:not(:last-child){
+                margin-right: 8px;
+            }
+            path{
+                fill: #cdcdcd;
+                transition: .3s all;
+            }
+            &.youtube{
+                padding: 11px 11px 8px 11px;
+                svg {
+                    width: 27px;
+                }    
+            }
+            &.facebook{
+                padding: 7px;
+                svg{
+                    width: 35px;
+                    height: 32px;
+                }
+            }
+            &.instagram{
+                padding: 6px 10px;
+                svg{
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+            &.whatsapp{
+                padding: 5px 7px;
+                svg{
+                    width: 35px;
+                    height: 35px;   
+                }
+            }
+            &:hover path{
+                fill: $pink;
+                transition: .3s all;
+            }
+            &:hover{
+                border: 1px solid $pink;
+                transition: .3s all;
+            }
+        }
+    }
+}
+
+
+@import 'media';

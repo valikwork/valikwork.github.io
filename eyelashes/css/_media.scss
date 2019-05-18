@@ -1,0 +1,268 @@
+@media screen and (max-width: 1200px){
+    .curses_first_row .curses_box .curse_item .wide{
+        max-width: 450px;
+    }
+    .curses_first_row .curses_box.big .curse_item .narrow{
+        max-width: 391px;
+    }
+    .curses_first_row .curses_box.base .curse_item .narrow,
+    .curses_first_row .curses_box.mega_big .curse_item .narrow{
+        max-width: 300px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_descr{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .curses_first_row .curses_box.base .curse_item .narrow, 
+    .curses_first_row .curses_box.mega_big .curse_item .narrow {
+        max-width: 250px;
+    }
+    .curses_first_row .curses_box.big .curse_item .narrow {
+        max-width: 326px;
+    }
+    .curses_first_row .curses_box .curse_heading{
+        font-size: 20px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_heading{
+        font-size: 20px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .curse_link{
+        padding: 10px 45px;
+    }
+    .curses_first_row{
+        padding: 0 30px 75px;
+    }
+}
+@media screen and (max-width: 980px){
+    .curses_first_row .curses_box .curse_item .wide {
+        max-width: 400px;
+    }
+    .upper_header .header_phone_box .header_backcall{
+        padding: 12px 46px;
+    }
+    .curses_first_row {
+        padding: 0 30px 30px;
+    }
+    .eyelash_bnr {
+        margin: 0 auto 65px;
+    }
+    .sign_up .sign_up_descr{
+        font-size: 21px;
+    }
+    .sign_up .sign_up_form::after{
+        right: -25%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .curses_first_row .curses_box.base .curse_item .narrow, .curses_first_row .curses_box.mega_big .curse_item .narrow {
+        max-width: 200px;
+    }
+    .curses_first_row .curses_box.big .curse_item .narrow {
+        max-width: 260px;
+    }
+    .curses_first_row .curses_box .curse_heading {
+        font-size: 16px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_heading {
+        font-size: 17px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_descr{
+        font-size: 12px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .curse_link {
+        padding: 7px 35px;
+    }
+    .curses_first_row .curses_box .curse_item .wide {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .upper_header{
+        padding: 36px 30px 7px;
+    }
+    .upper_header .empty{
+        display: none;
+    }
+    .sign_up .sign_up_descr{
+        max-width: 500px;
+        font-size: 19px;
+    }
+    .curses_first_row {
+        padding: 0 30px;
+    }
+    .eyelash_bnr {
+        margin: 0 auto 40px;
+    }
+    .sign_up .sign_up_descr:first-child {
+        margin-bottom: 30px;
+    }
+    .sign_up .sign_up_descr{
+        margin-bottom: 50px;
+    }
+    .sign_up .sign_up_form{
+        max-width: 350px;
+    }
+    .sign_up .sign_up_form::after{
+        right: -50%;
+        top: -17%;
+    }
+    .sign_up .sign_up_form input[type='submit']{
+        font-size: 16px;
+    }
+    .curses_first_row .curses_box .curse_item .wide {
+        max-width: 300px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_heading{
+        margin-bottom: 8px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_descr{
+        margin-bottom: 18px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .curse_link {
+        padding: 5px 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .down_header{
+        padding: 15px;
+        justify-content: flex-end;
+    }
+    .down_header .menu_list{
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 15px;
+    }
+    .down_header .burger_menu{
+        display: block;
+    }
+    .upper_header {
+        padding: 15px 25px 7px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover{
+        opacity: 1;
+        visibility: visible;
+    }
+    .curses_first_row .curses_box.base .curse_item .narrow, 
+    .curses_first_row .curses_box.mega_big .curse_item .narrow {
+        max-width: 166px;
+    }
+    .curses_first_row .curses_box .curse_heading {
+        font-size: 13px;
+    }
+    .curses_first_row .curses_box.big .curse_item .narrow {
+        max-width: 216px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_heading {
+        font-size: 13px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_descr {
+        font-size: 11px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .curse_link {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 718px){
+    .sign_up .sign_up_form::after{
+        display: none;
+    }
+    .sign_up .sign_up_form::before{
+        display: none;
+    }
+    .sign_up .sign_up_descr {
+        font-size: 16px;
+    }
+    .sign_up .sign_up_heading {
+        font-size: 20px;
+    }
+    .sign_up .sign_up_form input{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .curses_first_row {
+        padding: 0 15px;
+    }
+    .upper_header {
+        padding: 15px 10px 7px;
+    }
+}
+@media screen and (max-width: 650px){
+    .curses_first_row .curses_box .curse_item .wide {
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 594px){
+    .curses_first_row .curses_box{
+        flex-grow: 1;
+    }
+    .upper_header .header_phone_box .header_backcall{
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .down_header .menu_list .menu_list_item .menu_list_link{
+        font-size: 18px;
+    }
+    .upper_header .logo_link .logo_img{
+        max-width: 200px;
+    }
+    .sign_up .sign_up_descr{
+        max-width: 300px;
+        br{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .curses_first_row .curses_box.base .curse_item .narrow, 
+    .curses_first_row .curses_box.mega_big .curse_item .narrow,
+    .curses_first_row .curses_box.big .curse_item .narrow{
+        max-width: 250px;
+    }
+    .curses_first_row .curses_box .curse_item .wide {
+        max-width: 280px;
+    }
+    .upper_header .header_phone_box .phone_link {
+        font-size: 12px;
+    }
+    .curses_first_row .curses_box .curse_heading {
+        font-size: 16px;
+        max-width: 300px;
+        text-align: center;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .cover_heading{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .curses_first_row .curses_box .curse_item .curse_item_cover .curse_link {
+        font-size: 14px;
+    }
+    .sign_up .sign_up_form {
+        max-width: 270px;
+    }
+    .sign_up .sign_up_heading {
+        font-size: 17px;
+        text-align: center;
+    }
+    .upper_header{
+        align-items: center;
+    }
+    .upper_header .logo_link .logo_img {
+        max-width: 140px;
+    }
+    .sign_up{
+        padding: 0 15px 30px;
+    }
+    .upper_header .header_phone_box .header_backcall {
+        padding: 6px 12px;
+    }
+}
