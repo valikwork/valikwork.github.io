@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gllacy Shop</title>
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="body_wrapper">
+        <header>
+            <section class="navigation">
+                <a href="#" class="header_logo">
+                    <img src="img/logo.png" alt="" width="154" height="64">
+                </a>
+                <ul class="nav_list">
+                    <li class="nav_list_item">
+                        <a href="#" class="nav_link">Каталог</a>
+                            <ul class="hidden_menu">
+                                <li class="hidden_menu_item">
+                                    <a href="#" class="hidden_menu_link hidden_menu_headline">Новинки</a>
+                                </li>
+                                <li class="hidden_menu_item">
+                                    <a href="#" class="hidden_menu_link">Сливочное</a>
+                                </li>
+                                <li class="hidden_menu_item">
+                                    <a href="#" class="hidden_menu_link">Щербеты</a>
+                                </li>
+                                <li class="hidden_menu_item">
+                                    <a href="#" class="hidden_menu_link">Фруктовый лед</a>
+                                </li>
+                                <li class="hidden_menu_item">
+                                <a href="#" class="hidden_menu_link">Мелорин</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#" class="nav_link">Доставка и оплата</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#" class="nav_link">О Компании</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="main_menu">
+                <div class="main_menu_buttons">
+                    <div class="button_item_one">
+                        <button class="button search" id="search_button"></button>
+                        <div class="search_hidden" id="search_hidden" style="display: none">
+                            <form action="#">
+                                <label for="search_input"></label>
+                                <input id="search_input" type="text" placeholder="Что ищем?">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="button_item_two">
+                        <button class="button login" id="login">Вход</button>
+                        <div class="login_hidden" id="login_hidden" style="display: none">
+                            <form action="#">
+                                <label for="email"></label>
+                                <input id="email" type="text" class="email" placeholder="Электронная почта">
+                                <label for="password"></label>
+                                <input id="password" type="password" class="password" placeholder="Пароль">
+                                <div class="register_buttons">
+                                    <button class="enter">Войти</button>
+                                    <div class="register">
+                                        <button class="forgot_password">Забыли пароль?</button>
+                                        <button class="new_registration">Новая регистрация</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="button_item_three">
+                        <button class="button cart" id="cart">Пусто</button>
+                        <div class="cart_hidden" id="cart_hidden" style="display: none">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="main_menu_telephone">
+                    <span class="time">С 10 до 20, ежедневно</span>
+                    <span class="tel_number">8 812 450-25-25</span>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="slider">
+                <div class="slide_item">
+                    <img src="img/slide_1.png" alt="">
+                    <div class="slider_item_order">
+                        <h2 class="slider_item_order_name">Крем-брюле и пломбир с малиновым джемом</h2>
+                        <button class="give_both">Давайте оба!</button>
+                    </div>
+                </div>
+                <div class="slide_item">
+                    <img src="img/slide_2.png" alt="">
+                    <div class="slider_item_order">
+                        <h2 class="slider_item_order_name">Шоколадный пломбир
+                            и лимонный сорбет</h2>
+                        <button class="give_both">Давайте оба!</button>
+                    </div>
+                </div>
+                <div class="slide_item">
+                    <img src="img/slide_3.png" alt="">
+                    <div class="slider_item_order">
+                        <h2 class="slider_item_order_name">Пломбир с помадкой
+                            и клубничный щербет</h2>
+                        <button class="give_both">Давайте оба!</button>
+                    </div>
+                </div>
+            </section>
+            <section class="for_free">
+                <div class="for_free_card berrys">
+                    <h3 class="for_free_card_title">Малинка даром!</h3>
+                    <p class="for_free_card_descr">При покупке 2 кг любого
+                        фруктового мороженого, добавим в ваш заказ
+                        банку малинового варенья бесплатно.</p>
+                    <button class="for_free_card_button">Хочу варенье!</button>
+                </div>
+                <div class="for_free_card chocolate">
+                    <h3 class="for_free_card_title">Шоколадки даром!</h3>
+                    <p class="for_free_card_descr">При покупке 2 кг
+                        пломбира, добавим в ваш заказ упаковку
+                        вкуснейшей шоколадной присыпки совершенно
+                        бесплатно.</p>
+                    <button class="for_free_card_button">Хочу шоколадки!</button>
+                </div>
+            </section>
+            <section class="hits">
+                <div class="hit_item">
+                    <img class="hit_item_img" src="img/ice_cream_1.png" alt="" width="267" height="267">
+                    <span class="hit_price">310
+                        <span class="hit_price_value">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="31" viewBox="0 0 31 36">
+                                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMCREUCvw/Ra4AAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
+                            </svg>
+                            /кг
+                        </span>
+                    </span>
+                    <p class="hit_item_paragraph"><span class="hit_item_descr">Сливочное с апельсиновым джемом и цитрусовой
+                        стружкой</span></p>
+                    <button class="quick_look">Быстрый просмотр</button>
+                </div>
+                <div class="hit_item">
+                    <img class="hit_item_img" src="img/ice_cream_2.png" alt="" width="267" height="267">
+                    <span class="hit_price">380
+                        <span class="hit_price_value">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="31" viewBox="0 0 31 36">
+                                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMCREUCvw/Ra4AAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
+                            </svg>
+                            /кг
+                        </span>
+                    </span>
+                    <p class="hit_item_paragraph"><span class="hit_item_descr">Сливочно-кофейное с кусочками шоколада</span></p>
+                    <button class="quick_look">Быстрый просмотр</button>
+                </div>
+                <div class="hit_item">
+                    <img class="hit_item_img" src="img/ice_cream_3.png" alt="" width="267" height="267">
+                    <span class="hit_price">355
+                        <span class="hit_price_value">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="31" viewBox="0 0 31 36">
+                                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMCREUCvw/Ra4AAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
+                            </svg>
+                            /кг
+                        </span>
+                    </span>
+                    <p class="hit_item_paragraph"><span class="hit_item_descr">Сливочно-клубничное с присыпкой из белого шоколада</span></p>
+                    <button class="quick_look">Быстрый просмотр</button>
+                </div>
+                <div class="hit_item">
+                    <img class="hit_item_img" src="img/ice_cream_4.png" alt="" width="267" height="267">
+                    <span class="hit_price">415
+                        <span class="hit_price_value">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="31" viewBox="0 0 31 36">
+                                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IMCREUCvw/Ra4AAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
+                            </svg>
+                            /кг
+                        </span>
+                    </span>
+                    <p class="hit_item_paragraph"><span class="hit_item_descr">Сливочное крем-брюле с карамельной подливкой</span></p>
+                    <button class="quick_look">Быстрый просмотр</button>
+                </div>
+            </section>
+            <section class="seo">
+                <h3 class="seo_heading">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
+                    мороженого собственного производства на развес</h3>
+                <div class="advantages">
+                    <p class="advantage_item ice">Все наше мороженое изготавливается
+                        на собственном производстве, с использованием современного
+                        оборудования и проверенных временем технологий.</p>
+                    <p class="advantage_item cow">Закупка ингредиентов  производится только у
+                        проверенных фермерских хозяйств и компаний, с которыми нас
+                        связывает долговременное сотрудничество.</p>
+                    <p class="advantage_item leaf">Для приготовления мороженого
+                        используются настоящие сливки и молоко высочайшего
+                        качества. Все дополнительные ингредиенты и добавки
+                        произведены из натурального, экологически чистого сырья.</p>
+                    <p class="advantage_item temp">Доставка нашего мороженого до заказчиков
+                        осуществляется в специальном термопаке, который не дает
+                        мороженому растаять в пути и позволяет сохранить
+                        превосходный вкус.</p>
+                </div>
+            </section>
+            <section class="blog_news">
+                <a href="#" class="blog">
+                    <span class="whats_new">Новое в нашем блоге</span>
+                    <h2 class="blog_heading">10 способов сервировки
+                        фруктовых щербетов к
+                        столу</h2>
+                </a>
+                <div class="news_wrap">
+                    <div class="news">
+                        <p class="news_descr">Подпишитесь на нашу сладкую
+                            рассылку и будете всегда в курсе всего самого
+                            вкусного, что у нас происходит. Обещаем не спамить
+                            и не слать всякой ненужной ерунды. Честно =)</p>
+                        <form action="#" class="feedback">
+                            <input type="text" id="feedback_email" class="email" placeholder="Электронная почта">
+                            <label for="feedback_email"></label>
+                            <input type="submit" id="feedback_submit" class="submit">
+                            <label for="feedback_submit"></label>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="map">
+            <a class="dg-widget-link" href="http://2gis.ru/spb/firm/70000001007485934/center/30.327801704406742,59.94026700543478/zoom/15?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Санкт-Петербурга</a><div class="dg-widget-link"><a href="http://2gis.ru/spb/firm/70000001007485934/photos/70000001007485934/center/30.327801704406742,59.94026700543478/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/spb/center/30.323134,59.93873/zoom/15/routeTab/rsType/bus/to/30.323134,59.93873╎HTML Academy?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до HTML Academy</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":1200,"height":431,"borderColor":"#a3a3a3","pos":{"lat":59.94026700543478,"lon":30.327801704406742,"zoom":15},"opt":{"city":"spb"},"org":[{"id":"70000001007485934"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+            <div class="feedback_card">
+                <span class="feedback_card_text">Адрес главного офиса и офлайн-магазина:</span>
+                <h4 class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</h4>
+                <span class="feedback_card_text">Для заказов по телефону:</span>
+                <h4 class="feedback_telephone">8 812 450-25-25</h4>
+                <span class="feedback_card_text">(с 10 до 20 ежедневно)</span>
+                <button class="feedback_card_submit" id="feedback_card_submit">Форма обратной связи</button>
+            </div>
+            <div class="modal_block modal_hidden" id="modal_block">
+                <div class="curtain"></div>
+                <div class="modal_window">
+                    <h4 class="modal_headline">Мы обязательно вам ответим!</h4>
+                    <button class="close_modal" id="close_modal"></button>
+                    <form action="#" class="modal_form">
+                        <input type="text" class="name" id="name" placeholder="Как вас зовут?">
+                        <label for="name"></label>
+                        <input type="text" class="mail" id="mail" placeholder="Ваша почта для ответа?">
+                        <label for="mail"></label>
+                        <textarea class="comment" id="comment" placeholder="Напишите что-нибудь..."></textarea>
+                        <input type="submit" class="send_form" placeholder="Отправить">
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="social_links">
+                <a href="#" class="social_links_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="twitter">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social_links_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path d="M17.25 7.288v1.269c0 .297-.241.539-.538.539h-1.269c-.299 0-.538-.242-.538-.539v-1.269c0-.297.239-.538.538-.538h1.269c.297 0 .538.241.538.538zm-5.25 7.403c1.486 0 2.693-1.205 2.693-2.692s-1.207-2.69-2.693-2.69c-1.487 0-2.691 1.204-2.691 2.691s1.204 2.691 2.691 2.691zm4.261-3.291c.028.196.046.396.046.599 0 2.38-1.928 4.308-4.307 4.308s-4.307-1.928-4.307-4.307c0-.204.018-.403.046-.599.027-.194.066-.383.118-.567h-1.107v5.879c0 .297.241.538.538.538h9.424c.297 0 .538-.241.538-.538v-5.879h-1.107c.05.184.09.373.118.566zm7.739.6c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-5.385c0-.892-.723-1.615-1.615-1.615h-10.77c-.892 0-1.615.723-1.615 1.615v10.769c0 .893.723 1.616 1.615 1.616h10.77c.892 0 1.615-.723 1.615-1.616v-10.769z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social_links_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="facebook">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social_links_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 96 96" class="vk">
+                        <path d="M53.174,52.908c-1.539-0.896-3.678-0.896-5.416-0.896h-5.707v11.76h5.238
+                            c1.939,0,4.412,0.139,6.084-1.035c1.535-1.033,2.404-3.061,2.404-4.992C55.777,55.951,54.709,53.805,53.174,52.908z M51.021,42.865
+                            c1.27-0.967,1.936-2.691,1.936-4.279c0-1.725-0.801-3.381-2.27-4.277c-1.537-0.896-4.346-0.689-6.15-0.689h-2.486v10.35h3.289
+                            C47.211,43.969,49.418,44.107,51.021,42.865z M79.125,0H16.873C7.555,0,0,7.555,0,16.875v62.25C0,88.443,7.555,96,16.873,96h62.252
+                            C88.443,96,96,88.443,96,79.125v-62.25C96,7.555,88.443,0,79.125,0z M50.604,72.535H30.992V25.201H52.42
+                            c6.207,0,11.934,3.951,11.934,10.92c0,5.381-3.004,9.066-6.836,10.211v0.139c5.682,1.174,9.74,4.26,9.74,11.705
+                            C67.258,65.066,62.566,72.535,50.604,72.535z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer_info_links">
+                <div class="footer_info_container">
+                    <a href="#" class="footer_info_link supply">Для поставщиков</a>
+                    <a href="#" class="footer_info_link">О производстве</a>
+                </div>
+                <div class="footer_info_container">
+                    <a href="#" class="footer_info_link">Наши документы</a>
+                    <a href="#" class="footer_info_link">Экологические стандарты</a>
+                </div>
+            </div>
+            <div class="made_in">
+                <a href="https://htmlacademy.ru/" class="logo_link"><img src="img/logo-htmlacademy-small.png" alt="" width="108" height="39"></a>
+                <span class="made_in_text">Сделано в <a href="https://htmlacademy.ru/" class="underline">HTML Academy</a> © 2017</span>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
