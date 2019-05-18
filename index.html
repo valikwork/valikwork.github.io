@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header class="mb-4 sticky-top">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="navbar-toggle-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
+                    <image id="menu_icon" data-name="menu icon" width="20" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAwIKNxVB4LDeAAAAGUlEQVQoz2NguMTwnwh4iYlhWIFRX1PD1wB1VDq9TrVtXAAAAABJRU5ErkJggg=="/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#bio">Биография</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Каталог работ</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Подкатегория 1</a>
+                            <a href="#" class="dropdown-item">Подкатегория 2</a>
+                            <a href="#" class="dropdown-item">Подкатегория 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mb-4" id="bio">
+            <h1 class="text-center">Hello</h1>
+            <h2 class="text-center">Меня зовут Валентин</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="img/photo_2019-03-08_12-48-58.jpg" max-width="350px" class="img-fluid" alt="">
+                </div>
+                <p class="col-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quae tempora hic iure consequuntur, repellendus totam mollitia dignissimos? Quis ratione aliquid in, animi esse mollitia reiciendis numquam eos eligendi suscipit.</p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row px-2 justify-content-between">
+                <a href="projects/Cows/index.html" class="col-lg-5 py-2 col-md-5 col-sm mx-2 my-4 bg-secondary">
+                    <h3>Корпоративный сайт ветклиники</h3>
+                    <img src="img/Screenshot_1.jpg" class="col-sm rounded" alt="">
+                </a>
+                <a href="projects/Mitallent/index.html" class="col-lg-5 py-2 col-md-5 col-sm mx-2 my-4 bg-secondary">
+                    <h3>Магазин курток</h3> 
+                    <img src="img/Screenshot_2.jpg" class="col-sm rounded" alt="">
+                </a>
+                <a href="projects/Colors/index.html" class="col-lg-5 py-2 col-md-5 col-sm mx-2 my-4 bg-secondary">
+                    <h3>Магазин красок</h3>    
+                    <img src="img/Screenshot_3.jpg" class="col-sm rounded" alt="">
+                </a>
+                <a href="projects/Ice-cream/index.html" class="col-lg-5 py-2 col-md-5 col-sm mx-2 my-4 bg-secondary">
+                    <h3>Магазин мороженного</h3>
+                    <img src="img/Screenshot_4.jpg" class="col-sm rounded" alt="">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer bg-dark pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-sm" id="contacts">
+                    <h3>Мои контакты</h3>
+                    <p>Если хотите связаться со мной:</p>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <ul class="list-unstyled">
+                        <li><a href="tel:+380936471494">+380936471494</a></li>
+                        <li><a href="https://t.me/Ulyssezz">Telegram</a></li>
+                        <li><a href="">osiptsev.valik@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
